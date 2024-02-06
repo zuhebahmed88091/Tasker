@@ -1,5 +1,15 @@
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+
 function App() {
-  return <div>App</div>;
+  return (
+    <>
+      <Header />
+      <Hero />
+      <Footer />
+    </>
+  )
 }
 
 export default App;
