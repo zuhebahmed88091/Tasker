@@ -7,11 +7,13 @@ function App() {
   return (
     <>
       <Header />
-      <Hero />
-      <TaskBoard />
+      <div className="flex flex-col justify-center items-center">
+        <Hero />
+        <TaskBoard />
+      </div>
       <Footer />
     </>
-  )
+  );
 }
 
 export default App;
