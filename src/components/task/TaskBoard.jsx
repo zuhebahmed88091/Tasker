@@ -3,6 +3,7 @@ import SearchTask from "./SearchTask";
 import TaskActions from "./TaskActions";
 import TaskLists from "./TaskLists";
 import AddTaskModal from "./AddTaskModal";
+import NoTaskFound from "./NoTaskFound";
 
 export default function TaskBoard() {
   const defaultTask = {
@@ -87,12 +88,15 @@ export default function TaskBoard() {
             onAddClick={() => setShowAddModal(true)}
             onDeleteAllClick={handleDeleteAllClick}
           />
-          <TaskLists
-            tasks={tasks}
-            onEdit={handleEditTask}
-            onDelete={handleDeleteTask}
-            onFav={handleFavorite}
-          />
+          {
+            tasks.length > 0 ?
+            (<TaskLists
+              tasks={tasks}
+              onEdit={handleEditTask}
+              onDelete={handleDeleteTask}
+              onFav={handleFavorite}
+            />) : (<NoTaskFound />)
+          }
         </div>
       </div>
     </section>
