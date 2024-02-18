@@ -26,7 +26,7 @@
 - [❓ FAQ](#faq)
 - [📝 License](#license)
 
-# 📖 AirVibe <a name="about-project"></a>
+# 📖 Tasker <a name="about-project"></a>
 
 **Tasker** is a user-friendly task management system that simplifies task creation, listing, searching, categorizing, marking as favorite, status tracking and updating, editing, and deletion. It's built on React concepts like state management, lifting state up pattern, and event propagation
 
