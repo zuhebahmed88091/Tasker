@@ -38,7 +38,11 @@ export default function TaskLists({ tasks }) {
                 className="border-b border-[#2E3443] [&>td]:align-baseline [&>td]:px-4 [&>td]:py-2"
               >
                 <td>
-                  {task.isFavorite ? <FaStar color="yellow"/> : <FaStar color="gray"/>}
+                  {task.isFavorite ? (
+                    <FaStar color="yellow" />
+                  ) : (
+                    <FaStar color="gray" />
+                  )}
                 </td>
                 <td>{task.title}</td>
                 <td>
@@ -55,7 +59,7 @@ export default function TaskLists({ tasks }) {
                     ))}
                   </ul>
                 </td>
-                <td className="text-center">{ task.priority }</td>
+                <td className="text-center">{task.priority}</td>
                 <td>
                   <div className="flex items-center justify-center space-x-3">
                     <button className="text-red-500">Delete</button>
